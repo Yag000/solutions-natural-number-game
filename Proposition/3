@@ -1,0 +1,4 @@
+have x : Q := h(p),
+have y : T := j(x),
+have z : U := l(y),
+exact z,
