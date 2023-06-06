@@ -1,0 +1,9 @@
+induction n with n h,
+{
+refl,
+},
+rw pow_succ,
+rw pow_succ,
+rw h,
+rw pow_succ,
+simp,

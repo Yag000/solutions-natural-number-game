@@ -1,0 +1,7 @@
+induction m with n h,
+{
+refl,
+},
+rw pow_succ,
+rw h,
+refl,

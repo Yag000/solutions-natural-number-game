@@ -1,0 +1,10 @@
+induction n with n h,
+{
+rw pow_zero,
+simp,
+},
+rw add_succ,
+rw pow_succ,
+rw h,
+rw pow_succ,
+simp,
