@@ -1,0 +1,7 @@
+induction b with b h,
+{
+refl,
+},
+rw add_succ,
+rw h,
+refl,

@@ -1,0 +1,10 @@
+induction c with c hc,
+{
+rw add_zero b,
+refl,
+},
+rw add_succ (a+b) c,
+rw add_succ b c,
+rw add_succ a (b+c),
+rw hc,
+refl,
