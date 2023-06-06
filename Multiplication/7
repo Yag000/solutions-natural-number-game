@@ -1,0 +1,11 @@
+induction b with b h,
+{
+simp,
+rw zero_mul,
+refl,
+},
+rw add_succ,
+rw succ_mul,
+rw h,
+rw succ_mul,
+simp,

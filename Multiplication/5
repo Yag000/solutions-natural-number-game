@@ -1,0 +1,9 @@
+induction c with c h,
+{
+refl,
+},
+rw mul_succ,
+rw mul_succ,
+rw mul_add,
+rw h,
+refili,

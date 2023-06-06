@@ -1,0 +1,13 @@
+induction b with b h,
+{
+refl,
+},
+rw add_succ,
+rw mul_succ a b,
+rw succ_eq_add_one b,
+rw mul_add,
+rw h,
+rw mul_one,
+rw succ_eq_add_one,
+rw succ_eq_add_one,
+simp,

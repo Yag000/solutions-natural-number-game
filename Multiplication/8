@@ -1,0 +1,8 @@
+induction b with b h,
+{
+simp,
+},
+rw mul_succ,
+rw succ_mul,
+rw h,
+refl,
