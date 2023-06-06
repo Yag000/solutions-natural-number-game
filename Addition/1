@@ -1,0 +1,8 @@
+induction n with n h,
+{
+rw add_zero 0,
+refl,
+},
+rw add_succ,
+rw h,
+refl,
