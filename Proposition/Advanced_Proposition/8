@@ -1,0 +1,18 @@
+split,
+{
+  cc,
+},
+{
+  intro h,
+  cases h with paq par,
+  split,
+  {
+    cc,
+  },
+  {
+    cc,
+  },
+  {
+    cc,
+  },
+},

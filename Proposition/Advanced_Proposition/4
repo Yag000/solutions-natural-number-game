@@ -1,0 +1,29 @@
+intros f h,
+cases f with ptoq qtop,
+cases h with qtor rtoq,
+split,
+{
+intro p,
+apply qtor,
+apply ptoq,
+exact p,
+},
+{
+intro r,
+apply qtop,
+apply rtoq,
+exact r,
+},
+
+
+
+-- Alternative:
+-- intro f h,
+-- cases f with ptoq qtop,
+-- cases h with qtor rtoq,
+-- split,
+-- repeat{cc},
+
+
+-- Alternative:
+-- cc,
