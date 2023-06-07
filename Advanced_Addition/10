@@ -1,0 +1,10 @@
+cases b,
+{
+    refl,
+},
+{
+    rw add_succ at H,
+    exfalso,
+    apply succ_ne_zero,
+    apply H,
+},

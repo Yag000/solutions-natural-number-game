@@ -1,0 +1,12 @@
+intro h,
+induction t with t ht,
+{
+  repeat {rw add_zero at h},
+  exact h,
+},
+{
+  repeat {rw add_succ at h},
+  apply ht,
+  apply succ_inj,
+  exact h,
+},
