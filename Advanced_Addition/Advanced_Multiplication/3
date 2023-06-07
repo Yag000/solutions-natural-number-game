@@ -1,0 +1,18 @@
+split,
+{
+    intro h,
+    apply eq_zero_or_eq_zero_of_mul_eq_zero,
+    exact h,
+},
+{
+    intro h,
+    cases h with a b,
+    {
+        rw a,
+        apply zero_mul,
+    },
+    {
+        rw b,
+        apply mul_zero,
+    },
+},

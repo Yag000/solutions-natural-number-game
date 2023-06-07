@@ -1,0 +1,11 @@
+cases b,
+{
+    right,
+    refl,
+},
+{
+    rw mul_succ at h,
+    left,
+    apply add_left_eq_zero,
+    exact h,
+},
