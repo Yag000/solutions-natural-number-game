@@ -1,0 +1,12 @@
+intro h,
+induction a with k h1,
+{
+    apply succ_ne_zero,
+    have h2 := le_zero (succ 0) h,
+    apply h2,
+},
+{
+    apply h1,
+    apply le_of_succ_le_succ (succ k) k,
+    exact h,
+},

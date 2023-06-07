@@ -1,0 +1,6 @@
+intros h t,
+cases h with k h,
+use k,
+rw add_comm a t,
+rw h,
+simp,

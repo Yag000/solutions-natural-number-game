@@ -1,0 +1,6 @@
+cases hab with v1 hb,
+cases hbc with v2 hc,
+rw hc,
+rw hb,
+use (v1 + v2),
+simp,

@@ -1,0 +1,6 @@
+intro h,
+cases h with k h,
+rw succ_add at h,
+have h1 := succ_inj(h),
+use k,
+exact h1,

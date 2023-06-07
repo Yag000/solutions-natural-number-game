@@ -1,0 +1,13 @@
+intro h,
+split,
+{
+    apply le_of_succ_le_succ,
+    apply le_succ,
+    apply h,
+},
+{
+    intro h1,
+    have h2 := le_trans (succ a) b a h h1,
+    apply not_succ_le_self a,
+    exact h2,
+},

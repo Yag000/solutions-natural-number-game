@@ -1,0 +1,29 @@
+revert a,
+induction b with k h,
+{
+    intro a,
+    right,
+    apply zero_le,
+},
+{
+    intro a,
+    cases a,
+    {
+        left,
+        apply zero_le,
+    },
+    {
+        cases h a with h1 h2,
+        {
+            left,
+            apply succ_le_succ,
+            exact h1,
+        },
+
+        {
+            right,
+            apply succ_le_succ,
+            exact h2,
+        },
+    },
+},

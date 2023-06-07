@@ -1,0 +1,4 @@
+cases h with k h,
+use k,
+rw h,
+simp,
